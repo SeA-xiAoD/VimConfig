@@ -24,6 +24,8 @@ Bundle "sentientmachine/erics_vim_syntax_and_color_highlighting"
 Bundle  "vim-airline/vim-airline"
 Bundle "vim-airline/vim-airline-themes"
 " Bundle "Lokaltog/vim-powerline"
+Bundle "iamcco/mathjax-support-for-mkdp"
+Bundle "iamcco/markdown-preview.vim"
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local

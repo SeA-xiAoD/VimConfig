@@ -1,4 +1,5 @@
 set nocompatible
+set nowrap
 set nu
 syntax on
 set encoding=utf-8
@@ -17,14 +18,16 @@ set t_Co=256
 set laststatus=2
 set selectmode=mouse,key
 set selection=exclusive
+" 使鼠标和滚轮介入
+set mouse=a
 
 " 自动加括号
-inoremap ( ()<ESC>i
-inoremap [ []<ESC>i
-inoremap { {}<ESC>i
-inoremap < <><ESC>i
-inoremap ' ''<ESC>i
-inoremap " ""<ESC>i
+" inoremap ( ()<ESC>i
+" inoremap [ []<ESC>i
+" inoremap { {}<ESC>i
+" inoremap < <><ESC>i
+" inoremap ' ''<ESC>i
+" inoremap " ""<ESC>i
 
 " enable vundle
 filetype off
@@ -76,4 +79,8 @@ let g:mkdp_auto_open = 1
 let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 0
 let g:mkdp_command_for_global = 0
-let g:mkdp_path_to_chrome = "open -a Google\\ Chrome"
+"let g:mkdp_path_to_chrome = "open -a Google\\ Chrome"
+let g:mkdp_path_to_chrome = "open -a Safari"
+
+" Emmet
+let g:user_emmet_mode='a'    "enable all function in all mode.
